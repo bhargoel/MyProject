@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: "com.jfrog.artifactory"
 
+group = 'it.cits.itarchitecture.cdddemo.cddashboard'
+  version = '1.1.9-SNAPSHOT'
 
 
 

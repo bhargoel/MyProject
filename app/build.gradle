@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: "com.jfrog.artifactory"
 
 
-group = 'it.cits.dft.cddservice.4.3'
-version = '1.0'
+group = 'it.cits.dft.cddservice'
+version = '4.4'
 
 android {
     compileSdkVersion 19

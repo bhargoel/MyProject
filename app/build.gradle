@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+apply plugin : 'artifactory'
+
+group = 'it.cits.dft.cddservice.4.3'
+version = '1.0'
+
 android {
     compileSdkVersion 19
     buildToolsVersion "19.1.0"

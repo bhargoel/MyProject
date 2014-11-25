@@ -39,12 +39,7 @@ android {
     }
 }
 
-uploadArchives
-{
-repositories.mavenDeployer{
-repository (url:"http://repo-art.cisco.com/artifactory/ext-release-local/")
-}
-}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

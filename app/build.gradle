@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: "com.jfrog.artifactory"
 apply plugin : 'maven'
 
-group = 'it.CITS.DFT.DFT-CI-Jenkins.srcui'
+group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName = 'tomcat7'
 version= '0.0.1-SNAPSHOT'
 

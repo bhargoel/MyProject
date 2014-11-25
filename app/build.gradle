@@ -3,7 +3,7 @@ apply plugin: "com.jfrog.artifactory"
 apply plugin : 'maven'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
-archivesBaseName = 'tomcat7'
+archivesBaseName = 'mobile1'
 version= '0.0.1-SNAPSHOT'
 
   

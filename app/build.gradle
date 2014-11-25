@@ -39,15 +39,7 @@ android {
     }
 }
 
- repositories {
-    maven {
-      url "http://repo-art.cisco.com/artifactory/ext-release-local/"
-      credentials {
-        username = "jenkins-ci.gen"
-        password = "Giggity.123"
-      }
-    }
-  }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

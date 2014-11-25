@@ -49,7 +49,7 @@ artifactory {
       password = 'Giggity.123'
     } 
   }
-
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

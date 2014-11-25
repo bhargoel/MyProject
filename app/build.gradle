@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: "com.jfrog.artifactory"
 apply plugin : 'maven'
 
-group = 'it.cits.itarchitecture.cdddemo.cddashboard'
+group = 'it.CITS.DFT.DFT-CI-Jenkins.srcui'
 def artifactId = 'tomcat7'
 
   
@@ -40,7 +40,7 @@ android {
 uploadArchives
 {
 repositories.mavenDeployer{
-repository (url:"http://repo-art.cisco.com/artifactory/repo")
+repository (url:"http://repo-art.cisco.com/artifactory/ext-release-local/")
 }
 }
 

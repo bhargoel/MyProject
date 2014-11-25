@@ -32,7 +32,14 @@ android {
     
 
     
-   repositories {
+  
+    
+     lintOptions {
+        abortOnError false
+    }
+}
+
+ repositories {
     maven {
       url "http://repo-art.cisco.com/artifactory/ext-release-local/"
       credentials {
@@ -41,13 +48,6 @@ android {
       }
     }
   }
-    
-     lintOptions {
-        abortOnError false
-    }
-}
-
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

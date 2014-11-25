@@ -4,6 +4,7 @@ apply plugin : 'maven'
 
 group = 'it.CITS.DFT.DFT-CI-Jenkins.srcui'
 archivesBaseName = 'tomcat7'
+version= '0.0.1-SNAPSHOT'
 
   
 

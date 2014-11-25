@@ -39,7 +39,14 @@ android {
     }
 }
 
-
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.deployerJars
+        repository(url: "http://repo-art.cisco.com/artifactory/ext-release-local/") {
+            authentication(userName: "jenkins-ci.gen", password: "Giggity.123")
+        }
+    }
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

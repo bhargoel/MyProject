@@ -39,20 +39,7 @@ android {
     }
 }
 
-artifactory {
-    contextUrl = 'http://repo-art.cisco.com/artifactory/ext-release-local/'
-    publish {
-        repository {
-            repoKey = 'repo'
-            username = 'jenkins-ci.gen'
-            password = 'Giggity.123'
-           
-        }
-        defaults {
-            publications 'main'
-        }
-    }
-}
+
 
 
 dependencies {

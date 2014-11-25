@@ -28,7 +28,14 @@ android {
         }
     }
     
-   
+   publishing {
+    repositories {
+        maven {
+            // change to point to your repo, e.g. http://my.org/repo
+            url "http://repo-art.cisco.com/artifactory/repo"
+        }
+    }
+}
     
      lintOptions {
         abortOnError false

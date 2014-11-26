@@ -3,7 +3,7 @@
 
 apply plugin: 'com.android.application'
 
-apply plugin : 'maven'
+apply plugin : 'maven-publish'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName='my-app'

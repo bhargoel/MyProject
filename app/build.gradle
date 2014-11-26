@@ -39,7 +39,9 @@ android {
 }
 
 
-
+artifactoryPublish {
+    publishConfigs ('archives')
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: "com.jfrog.artifactory"
+
 apply plugin : 'maven'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'

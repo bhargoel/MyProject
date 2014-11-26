@@ -1,6 +1,4 @@
-group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 
-version= '1.4.9'
 
 
 apply plugin: 'com.android.application'
@@ -47,4 +45,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(group: 'it.cits.itarchitecture.cdddemo.cddashboard', name: 'mobile1', version: '1.5.0')
+
 }

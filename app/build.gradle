@@ -1,10 +1,13 @@
+group = 'it.cits.itarchitecture.cdddemo.cddashboard'
+
+version= '1.4.9'
+
+
 apply plugin: 'com.android.application'
 apply plugin: "com.jfrog.artifactory"
 apply plugin : 'maven'
 
-group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 
-version= '1.4.9'
 
   
 

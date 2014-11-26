@@ -39,22 +39,15 @@ android {
     }
 }
 
-configurations {
-  published
-}
-
-task sourceJar(type: Jar) {
-    from android.sourceSets.main.java
-    classifier "sources"
+ classifier "sources"
 }
 
 artifactoryPublish {
-    dependsOn sourceJar
+  
+    publishConfigs ('archives')
+
 }
 
-artifacts {
-    published sourceJar
-}
 
 
 dependencies {

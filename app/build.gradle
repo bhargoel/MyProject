@@ -4,6 +4,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin : 'maven-publish'
+apply plugin : 'android-maven'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 archivesBaseName='my-app'
@@ -38,11 +39,27 @@ android {
     }
 }
 
+configurations {
+  published
+}
 
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java
+    classifier "sources"
+}
+
+artifactoryPublish {
+    dependsOn sourceJar
+}
+
+artifacts {
+    published sourceJar
+}
 
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    classpath 'com.github.dcendents:android-maven-plugin:1.0'
     
 
 }

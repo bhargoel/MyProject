@@ -39,8 +39,7 @@ android {
     }
 }
 
- classifier "sources"
-}
+ 
 
 artifactoryPublish {
   

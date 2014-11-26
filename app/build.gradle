@@ -30,7 +30,9 @@ android {
     }
     
 
-    
+    artifactoryPublish {
+    publishConfigs ('archives')
+}
   
     
      lintOptions {
@@ -39,9 +41,7 @@ android {
 }
 
 
-artifactoryPublish {
-    publishConfigs ('archives')
-}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

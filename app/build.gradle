@@ -41,11 +41,11 @@ android {
 
  
 
-artifactoryPublish {
+//artifactoryPublish {
   
-    publishConfigs ('archives')
+  //  publishConfigs ('archives')
 
-}
+//}
 
 
 

@@ -43,11 +43,7 @@ android {
 }
 
  
-task myApk(type: apk)
 
-artifacts {
-    archives myApk
-}
 
 
 dependencies {

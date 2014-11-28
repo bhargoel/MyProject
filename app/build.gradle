@@ -6,7 +6,7 @@ apply plugin: 'com.android.application'
 apply plugin : 'maven'
 //apply plugin : 'android-maven'
 
-def globalVersion = new Version(currentVersion)
+def globalVersion = new Version('ext-release-local')
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
 //archivesBaseName='my-app'

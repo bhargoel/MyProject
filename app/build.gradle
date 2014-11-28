@@ -4,6 +4,7 @@
 apply plugin: 'com.android.application'
 //apply plugin: 'com.jfrog.artifactory'
 apply plugin : 'maven'
+apply plugin: 'android-library'
 //apply plugin : 'android-maven'
 
 
@@ -50,17 +51,9 @@ android {
 
 //}
 
-task myTask(type:  MyTaskType) {
-    destFile = file('build/somefile.txt')
-}
 
-artifacts {
-    archives(myTask.destFile) {
-        name 'my-artifact'
-        type 'text'
-        builtBy myTask
-    }
-}
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

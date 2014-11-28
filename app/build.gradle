@@ -58,6 +58,9 @@ task sourceJar(type: Jar) {
     from android.sourceSets.main.java
     classifier "sources"
 }
+artifactoryPublish {
+    dependsOn sourceJar
+}
 
 
 dependencies {

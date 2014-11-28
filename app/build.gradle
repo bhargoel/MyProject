@@ -43,10 +43,10 @@ android {
 }
 
  
-task myApk(type: Apk)
+task myApk(type: apk)
 
 artifacts {
-    archives myJar
+    archives myApk
 }
 
 

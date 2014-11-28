@@ -7,7 +7,7 @@ apply plugin : 'maven-publish'
 //apply plugin : 'android-maven'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
-archivesBaseName='my-app'
+//archivesBaseName='my-app'
 version= '1.4.9'
 
 android {

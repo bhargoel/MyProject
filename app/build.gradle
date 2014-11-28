@@ -3,7 +3,7 @@
 
 apply plugin: 'com.android.application'
 //apply plugin: 'com.jfrog.artifactory'
-apply plugin : 'maven-publish'
+apply plugin : 'maven'
 //apply plugin : 'android-maven'
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'

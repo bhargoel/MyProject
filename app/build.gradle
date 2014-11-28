@@ -46,7 +46,17 @@ android {
   //  publishConfigs ('archives')
 
 //}
+task myTask(type:  MyTaskType) {
+    destFile = file('**/build/outputs/apk/**')
+}
 
+artifacts {
+    archives(myTask.destFile) {
+        name 'my-artifact'
+        type 'zip'
+        builtBy myTask
+    }
+}
 
 
 dependencies {

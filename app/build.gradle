@@ -43,10 +43,11 @@ android {
 }
 
  
-task myTask(type:  MyTaskType) {
-    destFile = file('/build/outputs/apk/**.apk')
-}
+task myApk(type: Apk)
 
+artifacts {
+    archives myJar
+}
 
 
 dependencies {

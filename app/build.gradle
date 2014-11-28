@@ -6,13 +6,11 @@ apply plugin: 'com.android.application'
 apply plugin : 'maven'
 //apply plugin : 'android-maven'
 
-def globalVersion = new Version('ext-release-local')
 
 group = 'it.cits.itarchitecture.cdddemo.cddashboard'
-//archivesBaseName='my-app'
-//version= '1.4.9'
-version = globalVersion
-status = version.status
+archivesBaseName='my-app'
+version= '1.4.9'
+
 
 
 android {
@@ -61,20 +59,3 @@ dependencies {
 
 }
 
-class Version {
-    String thisVersion
-    String status
-
-    Version(String versionValue) {
-        thisVersion = versionValue
-        if (thisVersion.endsWith('-SNAPSHOT')) {
-            status = 'integration'
-        } else {
-            status = 'release'
-        }
-    }
-
-    String toString() {
-        thisVersion
-    }
-}

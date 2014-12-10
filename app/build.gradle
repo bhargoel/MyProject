@@ -19,7 +19,7 @@ def f3 = file("$apkPath/my-app-debug-unaligned.apk")
 artifacts {
 archives file: f1, name: f1.getName(), type: 'text'
 archives file: f2, name: f2.getName(), type: 'text'
-archives file: f3, name: f2.getName(), type: 'text'
+archives file: f3, name: f3.getName(), type: 'text'
 }
 
 android {
